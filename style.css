@@ -1,0 +1,92 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #000;
+    line-height: 1.8;
+}
+
+.iframe {
+    align:"right";
+}
+
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg4 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('https://bridgesandballoons.com/Images/2012/04/Sea-and-Forest-yoga-mat.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Scheduale) */
+.bgimg-2 {
+    background-image: url("http://az616578.vo.msecnd.net/files/2017/02/11/636224308711562940686916322_benefits-of-delray-beach-yoga.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("http://netdoctor.cdnds.net/16/18/980x490/landscape-1462458772-yoga.jpg");
+    min-height: 400px;
+}
+
+.bgimg-4 {
+    background-image: url("https://media1.popsugar-assets.com/files/thumbor/M4I0kWsIF0JOEqd9sWYpSXGOacY/fit-in/1200x630/filters:format_auto-!!-:strip_icc-!!-:fill-!white!-/2015/04/02/574/n/1922729/a707889d_edit_img_facebook_post_image_file_845239_1427908800_FB-yoga.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+body { 
+    display: felx;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+     flex-direction: column; 
+}
+
+.wrapper {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; 
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center; 
+    align-content: center; 
+}
+body > p {
+     font-family: "Satellite", "Roboto", sans-serif; font-size: 20px;
+     display: -webkit-box;
+     display: -ms-flexbox; 
+     display: flex; 
+     -webkit-box-pack: center; 
+     -ms-flex-pack: center;
+     justify-content: center; 
+     -ms-flex-line-pack: center; 
+     align-content: center; 
+     -webkit-box-align: center;
+     -ms-flex-align: center; 
+     align-items: center;
+     margin: 20px 40px;
+     text-align: justify;
+}
+
